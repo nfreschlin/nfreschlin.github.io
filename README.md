@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <!--
 	Strongly Typed by HTML5 UP
 	html5up.net | @ajlkn
@@ -41,7 +40,7 @@
 				</section>
 
 	<!-- ========================================= -->
-<!-- KIND BATCH MAIN HOMEPAGE CONTENT -->
+<!-- Projects -->
 <!-- ========================================= -->
 <section id="kb-main-content">
   <div class="container">
