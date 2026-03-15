@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project Presentation - Nikolaj Freschlin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.media-flow {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 1.5rem;
+				flex-wrap: wrap;
+				margin: 2rem 0;
+			}
+
+			.media-box {
+				text-align: center;
+				flex: 0 1 280px;
+			}
+
+			.media-box img,
+			.media-box video {
+				width: 100%;
+				max-width: 280px;
+				height: 220px;
+				object-fit: cover;
+				border-radius: 0.375rem;
+				display: block;
+				margin: 0 auto 0.75rem auto;
+			}
+
+			.media-symbol {
+				font-size: 3rem;
+				font-weight: 700;
+				line-height: 1;
+				flex: 0 0 auto;
+				margin: 0 0.25rem;
+			}
+
+			@media screen and (max-width: 980px) {
+				.media-flow {
+					flex-direction: column;
+				}
+
+				.media-symbol {
+					font-size: 2.5rem;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<div id="main">
+				<div class="inner">
+
+					<section class="project-page">
+
+						<ul class="actions">
+							<li><a href="main.html" class="button">&larr; Back to Homepage</a></li>
+						</ul>
+
+						<h1 style="font-size:25px; text-align:center;">Automated OpenSim Tool</h1>
+
+						<p style="text-align:center; margin-top:-0.5em;">
+							An example workflow showing biomechanical inputs and the output of the tool.
+						</p>
+
+						<hr />
+
+						<div class="media-flow">
+
+							<div class="media-box">
+								<img src="images/unscaled_model_generic.png" alt="First pitching figure">
+								<p style="text-align:center;">Unscaled generic OpenSim model</p>
+							</div>
+
+							<div class="media-symbol">+</div>
+
+							<div class="media-box">
+								<img src="images/v3d_demo.png" alt="Second pitching figure">
+								<p style="text-align:center;">Markered data from Visual 3D file </p>
+							</div>
+
+							<div class="media-symbol">&rarr;</div>
+
+							<div class="media-box">
+								<video controls>
+									<source src="files/opensim_demo.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<p style="text-align:center;">Fully scaled, processed OpenSim Simulation</p>
+							</div>
+
+						</div>
+
+						<hr />
+
+						<p style="text-align:left">
+							As part of my PhD research, I have created a tool that combines Python and MATLAB scripts to take Visual3D (.c3d) files and .mat files output from Qualisys to automatically produce a robust OpenSim MoCo simulation.
+							To do this, I modified two already-existing scripts which automated portions of the simlulation to guarantee ISB best-practice guidelines are met for neuromusculoskeletal simulations using
+							the OpenSim API for both Python and MATLAB. I utilized obejctive function minimization algorithms to reduce tracking errors and residual forces/torques, creating a valid, research-grade simulation. 
+							This tool reflects months of work, with continued validation and refinement. Unfortunetly, I cannot share the source code yet as I am in the process of publishing it. However, I am always open to discussing the tool!
+						</p>
+
+						<hr />
+
+						<ul class="actions">
+							<li><a href="main.html" class="button">&lt; Back to Homepage</a></li>
+						</ul>
+
+					</section>
+
+				</div>
+			</div>
+
+			<div id="sidebar">
+				<div class="inner">
+
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="main.html">Homepage</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="abstracts.html">Accepted Abstracts</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+
+
